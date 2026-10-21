@@ -1,0 +1,84 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-10-21T01:35:22.326Z",
+  "sourceCommit": null,
+  "sourceDigest": "04db2f0e5f22c658a28adae84f89eddbcd11e0d4d871ba75c60132ff6f22bd19",
+  "environment": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "24.16.0",
+    "packageManager": "pnpm@12.10.1",
+    "cleanDirectory": true,
+    "localGitClone": false
+  },
+  "checks": [
+    {
+      "id": "typecheck",
+      "status": "passed",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "startedAt": "2026-10-21T01:34:28.829Z",
+      "finishedAt": "2026-10-21T01:34:30.479Z",
+      "exitCode": 0
+    },
+    {
+      "id": "lint",
+      "status": "passed",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "startedAt": "2026-10-21T01:34:30.481Z",
+      "finishedAt": "2026-10-21T01:34:32.982Z",
+      "exitCode": 0
+    },
+    {
+      "id": "test",
+      "status": "passed",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "startedAt": "2026-10-21T01:34:32.983Z",
+      "finishedAt": "2026-10-21T01:34:33.455Z",
+      "exitCode": 0
+    },
+    {
+      "id": "build",
+      "status": "passed",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "startedAt": "2026-10-21T01:34:33.456Z",
+      "finishedAt": "2026-10-21T01:34:51.335Z",
+      "exitCode": 0
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-10-21T01:32:08.292Z"
+    }
+  ],
+  "limitations": [
+    "独立源码复制至本地 WSL 的 Linux 文件系统安装及构建，未执行从远端重新克隆安装。",
+    "浏览器使用 Windows 本机 Chrome 访问本地 WSL 生产服务；原始检查日志在 .work，本报告绑定源码摘要。",
+    "参考素材的商用及再分发许可待确认；表单仅本地校验，未部署。"
+  ]
+}
